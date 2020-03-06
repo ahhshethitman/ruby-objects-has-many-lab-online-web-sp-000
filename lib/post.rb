@@ -11,7 +11,7 @@ class Post
   
   def author_name 
      post_knows_author = self.author.name
-     if post_knows_author == ""
+     if post_knows_author.nil?
        return nil
      else 
        post_knows_author
