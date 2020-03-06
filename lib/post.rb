@@ -9,9 +9,11 @@ class Post
     @@all << self
   end
    def author_name 
-     self.author.name
+     post_knows_author = self.author.name
+     if post_knows_author == ""
+       return nil 
+     end 
      
-     if self.author.name
    end
   def self.all 
     @@all
