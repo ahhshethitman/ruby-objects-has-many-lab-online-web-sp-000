@@ -9,7 +9,7 @@ class Post
     @@all << self
   end
    def author_name 
-     knows_name = Author.name 
+     self.author 
    end
   def self.all 
     @@all
