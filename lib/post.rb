@@ -14,7 +14,7 @@ class Post
      if @author == nil 
        return nil
      else 
-       post_knows_author
+       @author.name
      end 
   end
   
