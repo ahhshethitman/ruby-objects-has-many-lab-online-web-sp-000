@@ -10,11 +10,11 @@ class Post
   end
   
   def author_name 
-     post_knows_author = self.author.name
-     if post_knows_author.nil?
+     
+     if @author.nil?
        return nil
      else 
-       post_knows_author
+       @author.name 
      end 
   end
   
