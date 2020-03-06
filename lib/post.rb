@@ -6,14 +6,15 @@ class Post
   
   def initialize(title)
     @title = title
+    @@all << self
   end
   
   def author_name 
-     
-     if @author == nil 
+     post_knows_author = self.author.name
+     if post_knows_author.nil?
        return nil
      else 
-       @author.name
+       post_knows_author
      end 
   end
   
