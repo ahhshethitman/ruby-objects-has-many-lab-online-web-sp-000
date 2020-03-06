@@ -10,6 +10,7 @@ class Post
   end
    def author_name 
      knows_name = Author.name 
+   end
   def self.all 
     @@all
   end 
